@@ -1,0 +1,37 @@
+{
+  "name": "nodejs-salesforce",
+  "version": "1.0.0",
+  "description": "Sample integration project between Salesforce and a React application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --write \"**/*.{css,html,js,json,md}\"",
+    "build": "rm -fr public/scripts && mkdir -p public/scripts && browserify -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ] client/*.js | uglifyjs > public/scripts/bundle.min.js",
+    "start": "node server/index.js",
+    "dev": "npm run build && npm run start",
+    "preinstall": "rm -fr public/assets",
+    "postinstall": "cp -r node_modules/@salesforce-ux/design-system/assets public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@salesforce-ux/design-system": "^2.20.1",
+    "browserify": "^17.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "jsforce": "^1.11.0",
+    "react": "^18.2.0",
+    "react-customizable-progressbar": "^1.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
+    "babelify": "^10.0.0",
+    "prettier": "^2.8.7",
+    "uglify-js": "^3.17.4"
+  }
+}
