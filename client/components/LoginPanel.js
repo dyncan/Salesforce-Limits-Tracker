@@ -16,8 +16,6 @@ export default function LoginPanel(props) {
       className="slds-modal slds-fade-in-open slds-modal_small"
       aria-modal="true"
     >
-      {/* {showSpinner && <Spinner />} */}
-
       <div className="slds-modal__container">
         <div className="slds-modal__content">
           <div className="slds-welcome-mat slds-welcome-mat_splash">
