@@ -10,7 +10,7 @@ const LIMITS_URL = "/limits";
 export default function App() {
   const [user, setUser] = useState(null);
   const [limits, setLimits] = useState(null);
-  const [showSpinner, setShowSpinner] = useState("");
+  const [showSpinner, setShowSpinner] = useState(false);
 
   const handleLogin = (msg) => {
     setShowSpinner(msg);
