@@ -1,7 +1,7 @@
 # Salesforce-Limits-Tracker
 This app use Node.js, ReactJS, and Salesforce technology to display organizational limitation in Salesforce CRM. Node.js builds the backend, while ReactJS creates the user interface for viewing limitation.
 
-This project is referenced to [Philippe Ozil repo](https://github.com/pozil/salesforce-react-integration/tree/master)
+My project drew inspiration from [Philippe Ozil](https://github.com/pozil/salesforce-react-integration/tree/master) work.
 
 ## About
 
